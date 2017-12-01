@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="imgview">Image view</string>
+    <string name="textview1">Temperature</string>
+    <string name="textview2">Condition</string>
+    <string name="textview3">Location</string>
+    <string name="location">location</string>
+    <string name="update">update</string>
+</resources>
