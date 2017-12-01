@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements WeatherServiceCal
 
     private TextView temperatureTextView, locationTextView, conditionTextView;
     private YahooWeatherService service;
-    private EditText inputLocation;
+    private EditText inputLocation, inputcountry;
     private Button updateButton;
     private ProgressDialog dialog;
 
@@ -29,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements WeatherServiceCal
         setContentView(R.layout.activity_main);
 
         updateButton = findViewById(R.id.button);
+        inputcountry = findViewById(R.id.editTextCountry);
         inputLocation = findViewById(R.id.editTextLocation);
         temperatureTextView = findViewById(R.id.textViewTemperature);
         locationTextView = findViewById(R.id.textViewLocation);
@@ -45,7 +46,8 @@ public class MainActivity extends AppCompatActivity implements WeatherServiceCal
                 dialog.setMessage("Loading..");
                 dialog.show();
                 String loc = inputLocation.getText().toString();
-                service.refreshWeather(loc + ", Indonesia");
+                String contry = inputcountry.getText().toString();
+                service.refreshWeather(loc + ", " + contry);
             }
         });
 

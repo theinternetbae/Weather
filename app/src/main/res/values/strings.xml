@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">Weather</string>
+    <string name="app_name">Weather App with Yahoo Weather API</string>
     <string name="imgview">Image view</string>
     <string name="textview1">Temperature</string>
     <string name="textview2">Condition</string>
     <string name="textview3">Location</string>
-    <string name="location">location</string>
+    <string name="location">City</string>
     <string name="update">update</string>
+    <string name="country">Country</string>
 </resources>
